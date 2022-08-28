@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "mappings": "AGAA;;;;;;EAME;AACF,AAAA,MAAM,CAAC;EACH,MAAM,EAAE,OAAO;CAClB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_breakpoints.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/utils/_general-styles.scss",
+        "../sass/utils/_mixins.scss",
+        "../sass/utils/_placeholders.scss",
+        "../sass/components/header/_fixed-header.scss",
+        "../sass/components/header/_mobile-menu.scss",
+        "../sass/components/footer/_contact-information.scss",
+        "../sass/components/footer/_subscription.scss",
+        "../sass/components/studio-main/_benefit.scss",
+        "../sass/components/studio-main/_duties.scss",
+        "../sass/components/studio-main/_team-members.scss",
+        "../sass/components/studio-main/_clients.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

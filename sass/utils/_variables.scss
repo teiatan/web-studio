@@ -1,19 +1,37 @@
-//цвета
-//text-color
-$dark-main-text-color: #757575;
-$light-main-text-color: #FFFFFF;
-$heading-text-color: #212121;
-$main-accent-text-color: #2196F3;
-$additional-accent-text-color: rgba(255, 255, 255, 0.6);
+//colors
 
-//background-color
-//acent-color
-//shadow-color
-//border-color
+    //text-color
+    $dark-main--text-color: #757575;
+    $light-main--text-color: #FFFFFF;
+    $heading--text-color: #212121;
+    $main-accent--text-color: #2196F3;
+    $light-additional--text-color: rgba(255, 255, 255, 0.6);
+    $dark-additional--text-color:rgba(117, 117, 117, 0.5);
 
-//цифры
-//font-size
-//line-height
-//font-weight
+    //background-color
+    $main--background-color: #FFFFFF;
+    $light-additional--background-color: #F5F4FA;
+    $dark-additional--background-color: rgba(255, 255, 255, 0.1);
+    $footer--background-color: #2F303A;
+    $button--background-color: #2196F3;
+    $modal-overlay--background-color: rgba(0, 0, 0, 0.2);
+    $card-overlay--background-color: rgba(33, 150, 243, 0.9);
+    
+    
+
+    //hover+focus+active colors
+    $main--hfa-color: #2196F3;
+    $button--hfa-color: #188CE8;
+
+    //shadow-color
+    //border-color
+    $sucscribe--border-color: rgba(255, 255, 255, 0.3);
+
+//numbers
+
+    //font-size
+    //line-height
+    //font-weight
+    //border-radius
 
 //анимация

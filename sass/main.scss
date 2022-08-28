@@ -1,1 +1,23 @@
 @import 'utils/breakpoints';
+@import 'utils/variables';
+@import 'utils/general-styles';
+@import 'utils/mixins';
+@import 'utils/placeholders';
+
+@import 'components/header/fixed-header';
+@import 'components/header/mobile-menu';
+
+@import 'components/footer/contact-information';
+@import 'components/footer/subscription';
+
+@import 'components/studio-main/benefit';
+@import 'components/studio-main/duties';
+@import 'components/studio-main/team-members';
+@import 'components/studio-main/clients';
+
+@import '';
+
+@import '';
+@import '';
+@import '';
+@import '';

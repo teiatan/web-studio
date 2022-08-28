@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AGOA,AAAA,MAAM,AAAC,CACH,MAAM,CAAE,OAAO,CAClB",
+    "mappings": "AGQA,AAAA,MAAM,AAAC,CACH,MAAM,CAAE,OAAO,CAClB",
     "sources": [
         "../sass/main.scss",
         "../sass/utils/_breakpoints.scss",

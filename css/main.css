@@ -1,12 +1,15 @@
-/* body {
- color: $dark-main-text-color;
- bakground-color: $main--background-color;
- font-family: 
- font-size:
- line-height:   
+body {
+  color: #757575;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  background-color: #FFFFFF;
 }
-*/
+
 button {
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */

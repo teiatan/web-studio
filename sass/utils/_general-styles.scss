@@ -1,11 +1,14 @@
-/* body {
- color: $dark-main-text-color;
- bakground-color: $main--background-color;
- font-family: 
- font-size:
- line-height:   
+body {
+    color: $dark-main--text-color;
+    font-family: Roboto, sans-serif;
+    font-size: $main--font-size;
+    background-color: $main--background-color;  
 }
-*/
+
 button {
     cursor: pointer;
+}
+
+ul {
+    list-style: none;
 }

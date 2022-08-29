@@ -53,6 +53,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: #FFFFFF;
   border: 1px solid #ECECEC;
 }
 
@@ -67,7 +68,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 15px;
+  padding: 0 22px 0 15px;
 }
 
 .header__mobile-container {
@@ -77,6 +78,7 @@ a {
   left: 0;
   width: 100%;
   min-height: 100vh;
+  background-color: #FFFFFF;
 }
 
 .header__mobile-container.is-open {
@@ -132,5 +134,13 @@ a {
   .menu-button {
     display: none;
   }
+}
+
+.hero {
+  margin-top: 60px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*# sourceMappingURL=main.css.map */

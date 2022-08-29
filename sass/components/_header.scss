@@ -12,6 +12,7 @@
         position: fixed;
         top: 0;
         left: 0;
+        background-color: $main--background-color;
         @include border-bottom ($header--border-color);
     }
 
@@ -20,7 +21,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 15px;
+        padding: 0 22px 0 15px;
     }
 
     &__mobile-container {
@@ -30,6 +31,7 @@
         left: 0;
         width: 100%;
         min-height: 100vh;
+        background-color: $main--background-color;
                 
         &.is-open {
             display: block;

@@ -81,3 +81,28 @@
         display: none;
     }
 }
+
+.pages {
+    margin: -18px 0 0 0;
+
+    &__link {
+
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: (47/40);
+        color: $heading--text-color;
+        transition: color $animation;
+
+        &--opened {
+            color: $main--hfa-color;
+        }
+
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+}

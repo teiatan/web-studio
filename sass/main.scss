@@ -1,17 +1,17 @@
 @import 'utils/breakpoints';
 @import 'utils/variables';
-@import 'utils/general-styles';
-@import 'utils/mixins';
 @import 'utils/placeholders';
+@import 'utils/mixins';
+@import 'utils/general-styles';
 
 @import 'components/logo';
-@import 'components/header/fixed-header';
-@import 'components/header/mobile-menu';
+@import 'components/header';
 @import 'components/modal';
 
 @import 'components/footer/contact-information';
 @import 'components/footer/subscription';
 
+@import 'components/studio-main/hero';
 @import 'components/studio-main/benefit';
 @import 'components/studio-main/duties';
 @import 'components/studio-main/team-members';

@@ -21,5 +21,9 @@
   }
 
   @mixin border-bottom ($color) {
-    border: 1px solid $color;
+    border-bottom: 1px solid $color;
+  }
+
+  @mixin border-right ($color) {
+    border-right: 1px solid $color;
   }

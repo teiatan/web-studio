@@ -24,27 +24,11 @@
         padding: 0 22px 0 15px;
     }
 
-    &__mobile-container {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        min-height: 100vh;
-        background-color: $main--background-color;
-                
-        &.is-open {
-            display: block;
-
-        }
-    }
-
 }
 
 .menu-button {
 
     display: inline-flex;
-    margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
@@ -82,6 +66,28 @@
     }
 }
 
+.mobile-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $main--background-color;
+    
+    &.is-open {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__bottom {
+        position: relative;
+        bottom: 0;
+    }
+}
+
 .pages {
     margin: -18px 0 0 0;
 
@@ -90,8 +96,8 @@
         text-decoration: none;
         font-style: normal;
         font-weight: 500;
-        font-size: 40px;
-        line-height: (47/40);
+        font-size: $pages-mm--font-size;
+        line-height: (47px/$pages-mm--font-size);
         color: $heading--text-color;
         transition: color $animation;
 
@@ -104,5 +110,64 @@
     &__item:not(:last-child) {
         margin-bottom: 32px;
     }
+
+}
+
+.contacts {
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    min-height: (28px+32px+40px);
+
+    &__link {
+
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        
+        &--mail {
+            font-size: $email-mm--font-size;
+            line-height: (28px/$email-mm--font-size);
+            color: $dark-main--text-color;
+            
+        }
+        
+        &--tel {
+           font-size: $phone-mm--font-size;
+           line-height: (40px/$phone-mm--font-size);
+           color: $main-accent--text-color;
+        }
+    }
+
+    &__icon {
+        display: none;
+    }
+}
+
+.header-socnet {
+    display: flex;
+    margin-top: 64px;
+    margin-bottom: 32px;
+
+    &__link {
+        font-weight: 500;
+        font-size: $social-networks-mm--font-size;
+        line-height: (22px/$social-networks-mm--font-size);
+        letter-spacing: 0.02em;
+        color: $main-accent--text-color;
+
+    }
+
+    &__item {
+        &:not(:last-child) {
+            @include border-right ($socnet-header--border-color);
+            padding-right: 10px;
+        }
+
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+    }
+    
 
 }

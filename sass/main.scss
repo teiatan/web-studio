@@ -4,8 +4,10 @@
 @import 'utils/mixins';
 @import 'utils/placeholders';
 
+@import 'components/logo';
 @import 'components/header/fixed-header';
 @import 'components/header/mobile-menu';
+@import 'components/modal';
 
 @import 'components/footer/contact-information';
 @import 'components/footer/subscription';

@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AGAA,AAAA,IAAI,CAAC;EACD,KAAK,EDEmB,OAAO;ECD/B,WAAW,EAAE,kBAAkB;EAC/B,SAAS,EDkCiB,IAAI;ECjC9B,gBAAgB,EDOS,OAAO;CCNnC;;AAED,AAAA,MAAM,CAAC;EACH,MAAM,EAAE,OAAO;CAClB;;AAED,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,IAAI;CACnB",
+    "mappings": "AGAA,AAAA,IAAI,CAAC;EACD,KAAK,EDEmB,OAAO;ECD/B,WAAW,EAAE,kBAAkB;EAC/B,SAAS,EDkCiB,IAAI;ECjC9B,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,gBAAgB,EDKS,OAAO;ECJhC,cAAc,EAAE,MAAM;CACzB;;AAED,AAAA,MAAM,CAAC;EACH,MAAM,EAAE,OAAO;CAClB;;AAED,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,IAAI;CACnB;;AAED,AAAA,CAAC,CAAC;EACE,eAAe,EAAE,IAAI;CACxB;;AGpBD,AAAA,KAAK,CAAC;EACF,WAAW,EAAE,mBAAmB;EAChC,WAAW,EAAE,GAAG;EAChB,SAAS,EJ4CiB,IAAI;EI3C9B,WAAW,EAAG,OAAE;EAEhB,YAAY,EAAE,IAAI;CAcrB;;AAZI,AAAD,WAAO,CAAC;EACJ,KAAK,EJHiB,OAAO;CIIhC;;AAGI,AAAD,kBAAO,CAAC;EACJ,KAAK,EJTS,OAAO;CIUxB;;AACA,AAAD,mBAAQ,CAAC;EACL,KAAK,EJbY,OAAO;CIc3B",
     "sources": [
         "../sass/main.scss",
         "../sass/utils/_breakpoints.scss",
@@ -8,8 +8,10 @@
         "../sass/utils/_general-styles.scss",
         "../sass/utils/_mixins.scss",
         "../sass/utils/_placeholders.scss",
+        "../sass/components/_logo.scss",
         "../sass/components/header/_fixed-header.scss",
         "../sass/components/header/_mobile-menu.scss",
+        "../sass/components/_modal.scss",
         "../sass/components/footer/_contact-information.scss",
         "../sass/components/footer/_subscription.scss",
         "../sass/components/studio-main/_benefit.scss",

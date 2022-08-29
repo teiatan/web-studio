@@ -2,7 +2,10 @@ body {
     color: $dark-main--text-color;
     font-family: Roboto, sans-serif;
     font-size: $main--font-size;
-    background-color: $main--background-color;  
+    font-style: normal;
+    font-weight: 400;
+    background-color: $main--background-color;
+    letter-spacing: 0.03em;
 }
 
 button {
@@ -11,4 +14,8 @@ button {
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }

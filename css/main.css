@@ -2,7 +2,10 @@ body {
   color: #757575;
   font-family: Roboto, sans-serif;
   font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
   background-color: #FFFFFF;
+  letter-spacing: 0.03em;
 }
 
 button {
@@ -11,5 +14,29 @@ button {
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16667;
+  margin-right: 15px;
+}
+
+.logo__left {
+  color: #2196F3;
+}
+
+.logo__right--dark {
+  color: #212121;
+}
+
+.logo__right--light {
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */

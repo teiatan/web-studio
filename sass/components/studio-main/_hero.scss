@@ -1,7 +1,43 @@
 .hero {
-    margin-top: 60px;
+    margin: 60px auto 0 auto;
+    min-height: 400px;
+    width: 100%;
     background-image: linear-gradient(to right, $hero-image--shadow-color, $hero-image--shadow-color),
-        url(../images/hero-img.jpg);
+        url(../images/hero-mobile-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-weight: 900;
+        font-size: $hero--font-size;
+        line-height: (42px/$hero--font-size);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $light-main--text-color;
+    }
+
+    &__button {
+        width: 200px;
+        height: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        color: #FFFFFF;
+        letter-spacing: 0.06em;
+    }
 }

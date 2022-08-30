@@ -18,6 +18,7 @@ button {
 
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
 a {
@@ -32,9 +33,25 @@ p {
     margin: 0;
 }
 
+img {
+    display: inline-block;
+}
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+ 
 .link {
     transition: color $animation;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        font-style: normal;
+        color: $main--hfa-color;
+        fill: $main--hfa-color;
+        transition: color $animation;
+    }
 }
 
 .container {

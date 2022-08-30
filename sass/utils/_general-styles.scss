@@ -41,3 +41,15 @@ p {
     margin-left: 15px;
     margin-right: 15px;
 }
+
+.title {
+    color: $heading--text-color;
+}
+
+.dont-display {
+    display: none;
+}
+
+.section {
+    margin-top: 60px;
+}

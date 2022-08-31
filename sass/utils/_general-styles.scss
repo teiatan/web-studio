@@ -11,9 +11,10 @@ body {
 
 button {
     cursor: pointer;
-    color: inherit;
+    color: $main--background-color;
     font-family: inherit;
     background-color: $button--background-color;
+    fill: $main--background-color;
 }
 
 ul {

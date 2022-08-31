@@ -1,0 +1,46 @@
+address {
+    font-style: normal;
+}
+
+.footer {
+    background-color: $footer--background-color;
+    text-align: center;
+    padding-top: 60px;
+
+
+    &__social-networks {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    
+    }
+
+    &__title {
+        color: $light-main--text-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 16px/14px;
+    }
+    
+}
+
+.address {
+
+    &__list {
+        margin-top: 20px;
+        
+    }
+
+    &__item:not(:first-child) {
+        margin-top: 8px;
+    }
+
+    &__location {
+        color: $light-main--text-color;
+    }
+
+    &__contacts {
+        color: $dark-main--text-color;
+        
+    }
+}
+

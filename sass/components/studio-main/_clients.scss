@@ -10,6 +10,7 @@
     }
 
     &__item {
+        height: 92px;
         margin: 15px;
         width: calc((100% - 60px) / 2);
         border: 1px solid $clients--border-color;

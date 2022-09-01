@@ -11,9 +11,11 @@ body {
 button {
   cursor: pointer;
   color: #FFFFFF;
+  font-size: 16px;
   font-family: inherit;
   background-color: #2196F3;
   fill: #FFFFFF;
+  padding: 0;
 }
 
 ul {
@@ -31,6 +33,7 @@ h3,
 ul,
 p {
   margin: 0;
+  font-size: inherit;
 }
 
 img {
@@ -361,10 +364,12 @@ address {
 
 .address__location {
   color: #FFFFFF;
+  line-height: 24px;
 }
 
 .address__contacts {
-  color: #757575;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 24px;
 }
 
 .subscribe__container {
@@ -416,6 +421,10 @@ address {
   cursor: pointer;
 }
 
+.subscribe__icon {
+  margin-left: 10px;
+}
+
 .social-networks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,7 +439,7 @@ address {
 }
 
 .social-networks--team {
-  margin: 16px 32px 30px 16px;
+  margin: 16px 32px 0px 16px;
   padding-bottom: 24px;
 }
 
@@ -657,6 +666,7 @@ address {
 }
 
 .clients__item {
+  height: 92px;
   margin: 15px;
   width: calc((100% - 60px) / 2);
   border: 1px solid #AFB1B8;

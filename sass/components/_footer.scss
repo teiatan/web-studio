@@ -30,16 +30,21 @@ address {
         
     }
 
+
     &__item:not(:first-child) {
         margin-top: 8px;
     }
 
     &__location {
         color: $light-main--text-color;
+        line-height: 24px;
+        
     }
 
     &__contacts {
-        color: $dark-main--text-color;
+        color: $light-additional--text-color;
+        line-height: 24px;
+        
         
     }
 }
@@ -69,6 +74,7 @@ address {
         }
 
         &__button {
+            
             margin: 20px auto 60px auto;
             width: 200px;
             height: 50px;
@@ -80,6 +86,10 @@ address {
             align-items: center;
             border: none;
             cursor: pointer;
-          }
+        }
+
+        &__icon {
+            margin-left: 10px;
+        }
 }
 

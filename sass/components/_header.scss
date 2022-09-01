@@ -2,6 +2,20 @@
 
     &__mobile-block {
         &.is-open {
+            position: static;
+        }
+
+        &.is-open .menu-button__icon-close {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            &:hover, &:focus {
+                fill: $main--hfa-color;
+            }
+        }
+    
+        &.is-open .menu-button__icon-open {
             display: none;
         }
     }
@@ -29,6 +43,10 @@
         padding: 0 22px 0 15px;
     }
 
+}
+
+.is-open .logo {
+    display: none;
 }
 
 .menu-button {

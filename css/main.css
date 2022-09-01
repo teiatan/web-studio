@@ -95,7 +95,7 @@ img {
 }
 
 .header__mobile-block.is-open {
-  display: none;
+  position: static;
 }
 
 .header__container {
@@ -125,6 +125,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 22px 0 15px;
+}
+
+.is-open .logo {
+  display: none;
 }
 
 .menu-button {

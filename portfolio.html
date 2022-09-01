@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__fixator" class="header__mobile-block" id="menu-block" block-menu>
+            <div class="header__container container">
+                <nav class="header__nav">
+                    
+                        <a href="./index.html" class="header__logo logo">
+                        <span class="logo__left">Web</span><span class="logo__right logo__right--dark">Studio</span>
+                        </a>
+
+                        <button type="button" class="header__mobile-menu menu-button " aria-expended="false" area-expended="two" aria-controls="menu-container menu-block" data-menu-button>
+                            <svg width="24" height="18.67" aria-label="Переключатель мобильного меню">
+                                <use class="menu-button__icon-open" margin="auto" href="./images/icons.svg#mobile-menu-open"></use>
+                                <use class="menu-button__icon-close" margin="auto" href="./images/icons.svg#mobile-menu-close"></use>
+                            </svg>
+                        </button>
+                    
+
+                    <div class="header__mobile-container mobile-container" id="menu-container" data-menu>
+                        <div class="mobile-container__top"> 
+                            <ul class="header__pages pages">
+                                <li class="pages__item"> 
+                                    <a href="./index.html" class="pages__link link">Студия</a>
+                                </li>
+                                <li class="pages__item"><a href="./portfolio.html" class="pages__link link pages__link--active pages__link--opened">Портфолио</a></li>
+                                <li class="pages__item"><a href="" class="pages__link link">Контакты</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mobile-container__bottom">
+                            <ul class="header__contacts contacts">
+                                <li class="contacts__item">
+                                    <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--mail link">
+                                        <svg class="contacts__icon" width="16" height="16">
+                                            <use href="images/icons.svg#header1"></use>
+                                        </svg>info@devstudio.com
+                                    </a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a href="tel:+380961111111" class="contacts__link contacts__link--tel link">
+                                        <svg class="contacts__icon" width="16" height="16">
+                                            <use href="images/icons.svg#header2"></use>
+                                        </svg>+38 096 111 11 11
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="header__socnet header-socnet">
+                                <li class="header-socnet__item"><a class="header-socnet__link" href=""> Instagram </a></li>
+                                <li class="header-socnet__item"><a class="header-socnet__link" href=""> Twitter </a></li>
+                                <li class="header-socnet__item"><a class="header-socnet__link" href=""> Facebook </a></li>
+                                <li class="header-socnet__item"><a class="header-socnet__link" href=""> LinkedIn </a></li>
+                            </ul>
+                        </div>
+                    </div>   
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="portfolio section">
+        <div class="portfolio__container container">
+            <h1 class="portfolio__title">Портфолио</h1>
+            <h2 class="portfolio__title">Фильтр работ</h2>
+            <ul class="portfolio__filter filter list">
+                <li class="filter__item"><button type="button" class="filter__button" style="border: none;">Все</button></li>
+                <li class="filter__item"><button type="button" class="filter__button" style="border: none;">Веб-сайты</button></li>
+                <li class="filter__item"><button type="button" class="filter__button" style="border: none;">Приложения</button></li>
+                <li class="filter__item"><button type="button" class="filter__button" style="border: none;">Дизайн</button></li>
+                <li class="filter__item"><button type="button" class="filter__button" style="border: none;">Маркетинг</button></li>
+            </ul>
+
+            <h2 class="portfolio__title">Примеры работ</h2>
+            <ul class="portfolio__works works list">
+                <li class="works__item">
+                    <a class="works__link" href="">
+                        <div class="works__picture">
+                            <img class="works__img" src="./images/portfolio1.jpg" alt="Ноутбук с открытой стартовой страницей сайта Технокряк" width="370" />
+                            <div class="works__overlay"><p class="works__description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                            шпионажа и атак на защищённые сервера конкурентов.</p></div>
+                        </div>
+                        <div class="works__caption"><h3 class="works__name">Технокряк</h3>
+                        <p class="works__type">Веб-сайт</p></div>
+                    </a>               
+                </li>
+                <li class="works__item">
+                    <a class="works__link" href="">
+                        <div class="works__picture">
+                            <img class="works__img" src="./images/portfolio2.jpg" alt="Двое баскетболистов борятся за мяч" width="370"/>
+                            <div class="works__overlay">
+                                <p class="works__description">Постер New Orlean vs Golden Star</p>
+                            </div>
+                        </div>
+                        <div class="works__caption"><h3 class="works__name">Постер New Orlean vs Golden Star</h3>
+                        <p class="works__type">Дизайн</p></div>
+
+                    </a>             
+                </li>
+                <li class="works__item">
+                    <a class="works__link" href="">
+                        <div class="works__picture">
+                            <img class="works__img" src="./images/portfolio3.jpg" alt="Надпись названия ресторана на фоне серой рыбины" width="370" />
+                            <div class="works__overlay">
+                                <p class="works__description">Ресторан Seafood</p>
+                            </div>
+                        </div>
+                        <div class="works__caption"><h3 class="works__name">Ресторан Seafood</h3>
+                        <p class="works__type">Приложение</p></div>
+                    </a>
+                </li>
+                <li class="works__item">
+                    <a class="works__link" href="">
+                        <div class="works__picture">
+                            <img class="works__img" src="./images/portfolio4.jpg" alt="Черные наушники" width="370"/>
+                            <div class="works__overlay">
+                                <p class="works__description">Проект Prime</p>
+                            </div>
+                        </div>
+                        <div class="works__caption"><h3 class="works__name">Проект Prime</h3>
+                        <p class="works__type">Маркетинг</p></div>
+
+                    </a>                
+                </li>
+                <li class="works__item">
+                    <a class="works__link" href="">
+                        <div class="works__picture">
+                            <img class="works__img" src="./images/portfolio5.jpg" alt="Две коробки на белом фоне" width="370" />
+                            <div class="works__overlay">
+                                <p class="works__description">Проект Boxes</p>
+                            </div>
+                        </div>
+                        <div class="works__caption"><h3 class="works__name">Проект Boxes</h3>
+                        <p class="works__type">Приложение</p></div>
+                    </a>
+                </li>
+                <li class="works__item">
+                    <a class="works__link" href="">
+                        <div class="works__picture">
+                            <img class="works__img" src="./images/portfolio6.jpg" alt="Монитор компьютера с открытым веб-сайтом в черном стиле" width="370"/>
+                            <div class="works__overlay">
+                                <p class="works__description">Inspiration has no Borders</p>
+                            </div>
+                        </div>
+                        <div class="works__caption"><h3 class="works__name">Inspiration has no Borders</h3>
+                        <p class="works__type">Веб-сайт</p></div>
+
+                    </a>               
+                </li>
+                <li class="works__item">
+                    <a class="works__link" href="">
+                        <div class="works__picture">
+                            <img class="works__img" src="./images/portfolio7.jpg" alt="Открытая книга" width="370" />
+                            <div class="works__overlay">
+                                <p class="works__description">Издание Limited Edition</p>
+                            </div>
+                        </div>
+                        <div class="works__caption"><h3 class="works__name">Издание Limited Edition</h3>
+                        <p class="works__type">Дизайн</p></div>
+
+                    </a>             
+                </li>
+                <li class="works__item">
+                    <a class="works__link" href="">
+                        <div class="works__picture">
+                            <img class="works__img" src="./images/portfolio8.jpg" alt="Белая бирка с надписью" width="370" />
+                            <div class="works__overlay">
+                                <p class="works__description">Проект LAB</p>
+                            </div>
+                        </div>
+                        <div class="works__caption"><h3 class="works__name">Проект LAB</h3>
+                        <p class="works__type">Маркетинг</p></div>
+
+                    </a>                
+                </li>
+                <li class="works__item">
+                    <a class="works__link" href="">
+                        <div class="works__picture">
+                            <img class="works__img" src="./images/portfolio9.jpg" alt="Работа с приложением на ноутбуке" width="370"/>
+                            <div class="works__overlay">
+                                <p class="works__description">Growing Business</p>
+                            </div>
+                        </div>
+                        <div class="works__caption"><h3 class="works__name">Growing Business</h3>
+                        <p class="works__type">Приложение</p></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__main">
+                <a href="/" class="logo"><span class="logo__left">Web</span><span class="logo__right--light">Studio</span></a>
+                <address class="footer__address address">
+                    <ul class="address__list">
+                        <li class="address__item"><a class="address__location" href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="address__item"><a class="address__contacts link" href="mailto:info@example.com">info@example.com</a></li>
+                        <li class="address__item"><a class="address__contacts link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    </ul>
+                 </address>
+            </div>
+            <div class="footer__social-networks">
+                <div><p class="footer__title">Присоединяйтесь</p></div>
+                <div class="social-networks social-networks--footer"><ul class="social-networks__list social-networks__list--footer">
+                <li class="social-networks__item social-networks__item--footer"><a class="social-networks__link social-networks__link--footer" href=""><svg class="social-networks__icon social-networks__icon--white" width="20" height="20"><use href="./images/icons.svg#instagram"></use></svg> </a></li>
+                <li class="social-networks__item social-networks__item--footer"><a class="social-networks__link social-networks__link--footer" href=""><svg class="social-networks__icon social-networks__icon--white" width="20" height="20"><use href="./images/icons.svg#twitter"></use></svg> </a></li>
+                <li class="social-networks__item social-networks__item--footer"><a class="social-networks__link social-networks__link--footer" href=""><svg class="social-networks__icon social-networks__icon--white" width="20" height="20"><use href="./images/icons.svg#facebook"></use></svg> </a></li>
+                <li class="social-networks__item social-networks__item--footer"><a class="social-networks__link social-networks__link--footer" href=""><svg class="social-networks__icon social-networks__icon--white" width="20" height="20"><use href="./images/icons.svg#linkedin"></use></svg> </a></li>
+                </ul></div>
+            </div>
+            <div class="footer__subscribe subscribe">
+                <div class="subscribe__title">
+                    <label class= "footer__title" for="subscribe-footer">Подпишитесь на рассылку</label>
+                </div>
+                <div class="subscribe__container">
+                    <input class="subscribe__input" type="email" name="mail" placeholder="E-mail" id="subscribe-footer">
+                    <button class="subscribe__button button" type="submit">Подписаться
+                        <svg class="subscribe__icon" width="24" height="24">
+                            <use href="./images/icons.svg#subscribe-button"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal__close link" data-modal-close> <svg width="11" height="11"> <use href="./images/icons.svg#close"></use></svg>
+            </button>
+            <b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>
+            <form class="modal__form form">
+                <div class="form__container">
+                
+                    <label class="form__label" for="name">Имя</label>
+                    <div class="form__input input">
+                        <input class="input__area" type="text" name="name" id="name" autofocus>
+                        <svg class="input__icon" width="12" height="12">
+                            <use href="./images/icons.svg#modal-name"></use>
+                        </svg>
+                    </div>
+
+                    <label class="form__label" for="phone">Телефон</label>
+                    <div class="form__input input">
+                        <input class="input__area" type="tel" name="phone" id="phone">
+                        <svg class="input__icon" width="12" height="12">
+                            <use href="./images/icons.svg#modal-phone"></use>
+                        </svg>
+                    </div>
+
+                    <label class="form__label" for="mail">Почта</label>
+                    <div class="form__input input">
+                        <input class="input__area" type="email" name="mail" id="mail">
+                        <svg class="input__icon" width="12" height="12">
+                            <use href="./images/icons.svg#modal-mail"></use>
+                        </svg>
+                    </div>
+
+                    
+                    <label class="form__label" for="comment">Комментарий</label>
+                    <textarea class="form__textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    
+                    <div class="form__checkbox"> 
+                        <label class="checkbox__label" for="agreement">
+                            <input class="checkbox__input" type="checkbox" name="agreement" value="" id="agreement">
+                            Соглашаюсь с рассылкой и принимаю  
+                            <span class="checkbox__container">
+                                <svg class="checkbox__icon" width="11" height="8">
+                                    <use href="./images/icons.svg#checkbox"></use>
+                                </svg>
+                            </span>
+                            <a class="checkbox__link" href=""> Условия договора</a>
+                            
+                        </label>
+                    </div>
+                </div>
+                <button class= "form__button" type="submit">Отправить</button>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/mobile-header.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+
+</body>
+</html>

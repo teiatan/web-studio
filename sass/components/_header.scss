@@ -16,6 +16,10 @@
         background-color: $main--background-color;
         @include border-bottom ($header--border-color);
 
+        &.is-open {
+            @include border-bottom ($main--background-color);
+        }
+
 
         &.is-open .menu-button__icon-close {
             display: flex;

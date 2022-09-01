@@ -109,6 +109,10 @@ img {
   border-bottom: 1px solid #ECECEC;
 }
 
+.header__fixator.is-open {
+  border-bottom: 1px solid #FFFFFF;
+}
+
 .header__fixator.is-open .menu-button__icon-close {
   display: -webkit-box;
   display: -ms-flexbox;

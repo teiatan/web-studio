@@ -1,24 +1,6 @@
 .header {
 
-    &__mobile-block {
-        &.is-open {
-            position: static;
-        }
-
-        &.is-open .menu-button__icon-close {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            &:hover, &:focus {
-                fill: $main--hfa-color;
-            }
-        }
     
-        &.is-open .menu-button__icon-open {
-            display: none;
-        }
-    }
         
     &__container {
         min-height: 60px;
@@ -33,6 +15,26 @@
         left: 0;
         background-color: $main--background-color;
         @include border-bottom ($header--border-color);
+
+
+        &.is-open .menu-button__icon-close {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            &:hover, &:focus {
+                fill: $main--hfa-color;
+            }
+        }
+    
+        &.is-open .menu-button__icon-open {
+            display: none;
+        }
+
+        &.is-open .header__nav {
+            display: flex;
+            justify-content: flex-end;
+        }
     }
 
     &__nav {

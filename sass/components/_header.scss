@@ -26,9 +26,6 @@
             justify-content: center;
             align-items: center;
             
-            &:hover, &:focus {
-                fill: $main--hfa-color;
-            }
         }
     
         &.is-open .menu-button__icon-open {
@@ -63,19 +60,21 @@
     background-color: transparent;
     z-index: 2;
 
+    &:hover {
+        fill: $main--hfa-color;
+    }
+
 
     &__icon-close {
         display: none;
         transition: fill $animation;
+        
         
     }
 
     &__icon-open {
         transition: fill $animation;
 
-        &:hover, &:focus {
-            fill: $main--hfa-color;
-        }
     }
 
     &.is-open .menu-button__icon-close {
@@ -83,9 +82,7 @@
         justify-content: center;
         align-items: center;
         
-        &:hover, &:focus {
-            fill: $main--hfa-color;
-        }
+
     }
 
     &.is-open .menu-button__icon-open {
@@ -93,7 +90,7 @@
     }
 
     @include tablet {
-        display: none;
+       display: none;
     }
 }
 

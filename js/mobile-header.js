@@ -4,10 +4,10 @@
   
     menuBtnRef.addEventListener("click", () => {
       const expanded =
-        menuBtnRef.getAttribute("aria-expanded") === "two" || one;
+        menuBtnRef.getAttribute("area-expanded") === "two" || false;
   
       menuBtnRef.classList.toggle("is-open");
-      menuBtnRef.setAttribute("aria-expanded", !expanded);
+      menuBtnRef.setAttribute("area-expanded", !expanded);
   
       mobileMenuRef.classList.toggle("is-open");
     });

@@ -220,6 +220,7 @@ img {
   background-color: #FFFFFF;
   margin: -66px 0 0 0;
   padding-top: 48px;
+  overflow: scroll;
 }
 
 .mobile-container.is-open {
@@ -299,6 +300,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
   margin-bottom: 32px;
 }
@@ -348,6 +351,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  overflow: scroll;
 }
 
 .modal__close {

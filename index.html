@@ -340,17 +340,25 @@
                     <textarea class="form__textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
                     
                     <div class="form__checkbox"> 
-                        <label class="checkbox__label" for="agreement">
-                            <input class="checkbox__input" type="checkbox" name="agreement" value="" id="agreement">
-                            Соглашаюсь с рассылкой и принимаю  
-                            <span class="checkbox__container">
-                                <svg class="checkbox__icon" width="11" height="8">
-                                    <use href="./images/icons.svg#checkbox"></use>
-                                </svg>
-                            </span>
-                            <a class="checkbox__link" href=""> Условия договора</a>
+                        <span class="checkbox__mobile-container"> 
+
+                            <label class="checkbox__label" for="agreement">
+                                <input class="checkbox__input" type="checkbox" name="agreement" value="" id="agreement">
+                                Соглашаюсь с рассылкой и принимаю  
+                                <span class="checkbox__container">
+                                    <svg class="checkbox__icon" width="11" height="8">
+                                        <use href="./images/icons.svg#checkbox"></use>
+                                    </svg>
+                                </span>
+                                
+                                
+                            </label>
                             
-                        </label>
+                            <a class="checkbox__link checkbox__link--first" href=""> Условия</a>
+                            <a class="checkbox__link" href=""> договора</a>
+
+                        </span>
+
                     </div>
                 </div>
                 <button class= "form__button" type="submit">Отправить</button>

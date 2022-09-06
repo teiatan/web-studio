@@ -864,6 +864,12 @@ address {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__main {
+    text-align: start;
+  }
+}
+
 .footer__social-networks {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -911,14 +917,14 @@ address {
   }
 }
 
-.address__list {
-  margin-top: 20px;
-}
-
 @media screen and (min-width: 1200px) {
-  .address__list {
+  .address {
     text-align: start;
   }
+}
+
+.address__list {
+  margin-top: 20px;
 }
 
 .address__item:not(:first-child) {

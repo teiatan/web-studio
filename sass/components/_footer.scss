@@ -18,6 +18,12 @@ address {
         }
     }
 
+    &__main {
+        @include desktop {
+            text-align: start;
+        }
+    }
+
 
     &__social-networks {
         margin-top: 60px;
@@ -65,13 +71,14 @@ address {
 }
 
 .address {
+    @include desktop {
+        text-align: start;
+    }
 
     &__list {
         margin-top: 20px;
+
         
-        @include desktop {
-            text-align: start;
-        }
         
     }
 

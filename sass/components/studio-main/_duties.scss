@@ -1,3 +1,7 @@
 .duties {
     display: none;
+
+    @include desktop{
+        display: flex;
+    }
 }

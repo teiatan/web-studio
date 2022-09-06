@@ -3,10 +3,15 @@
     text-align: center;
 
     &__list {
-        padding-bottom: 45px;
+        padding-bottom: 60px;
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
+
+        @include desktop {
+            flex-wrap: nowrap;
+            padding-bottom: 94px;
+        }
     }
 
     &__item {
@@ -20,6 +25,12 @@
         flex-direction: column;
         justify-content: center;
         transition: border-color $animation;
+
+        @include tablet {
+            width: calc((100% - 90px) / 3);
+        }
+
+
 
         &:hover,
         &:focus {

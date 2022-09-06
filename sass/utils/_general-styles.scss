@@ -65,8 +65,8 @@ img {
     margin-right: 15px;
 
     @include desktop {
-        margin-left: 215px;
-        margin-right: 215px;
+        margin: 0 auto;
+        width: 1200px;
     }
 }
 
@@ -74,6 +74,11 @@ img {
     color: $heading--text-color;
     font-size: $title--font-size;
     margin-bottom: 30px;
+
+    @include desktop {
+        font-size: 36px;
+        line-height: 42/36;
+    }
 }
 
 .dont-display {

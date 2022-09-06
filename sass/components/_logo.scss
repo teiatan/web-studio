@@ -4,6 +4,11 @@
     font-size: $logo--font-size;
     line-height: (28/24);
 
+    @include desktop {
+        font-size: 26px;
+        line-height: (31/26);
+    }
+
     &__left {
         color: $main-accent--text-color;
     }
@@ -16,4 +21,6 @@
             color: $light-main--text-color;
         }
     }
+
+    
 }

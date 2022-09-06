@@ -85,6 +85,12 @@ img {
   margin-top: 60px;
 }
 
+@media screen and (min-width: 1600px) {
+  .section {
+    margin-top: 94px;
+  }
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -1011,6 +1017,22 @@ address {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-top: 80px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tablet-img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet-img.jpg);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .hero {
+    min-height: 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+  }
+}
+
 .hero__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1036,6 +1058,13 @@ address {
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 1600px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 60/44;
+  }
 }
 
 .hero__button {

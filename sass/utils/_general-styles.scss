@@ -9,6 +9,8 @@ body {
     letter-spacing: 0.03em;
 }
 
+
+
 button {
     cursor: pointer;
     color: $main--background-color;
@@ -80,4 +82,8 @@ img {
 
 .section {
     margin-top: 60px;
+
+    @include desktop {
+        margin-top: 94px;
+    }
 }

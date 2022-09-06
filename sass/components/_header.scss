@@ -56,6 +56,12 @@
             padding: 0 15px 0 15px;
 
         }
+
+        @include desktop {
+            padding: 0 215px 0 215px;
+
+        }
+
     }
 
 }
@@ -150,6 +156,10 @@
         display: flex;
         align-items: center;
     }
+
+    @include desktop {
+        width: 100%;
+    }
 }
 
 .pages {
@@ -157,8 +167,13 @@
     @include tablet {
         display: flex;
         align-items: center;
-        padding-left: 84px;
+        padding-left: 88px;
         padding-right: 84px;
+    }
+
+    @include desktop {
+        padding-left: 93px;
+        padding-right: 305px;
     }
 
     &__link {
@@ -226,17 +241,22 @@
 }
 
 .contacts {
+    display: flex;
 
     @include mobile {
-
-        display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
         min-height: (28px+32px+40px);
     }
 
+    @include tablet{
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: (14px+10px+14px)
+    }
+
     @include desktop {
-        display: flex;
+        flex-direction: row;
         align-items: center;
     }
    
@@ -248,6 +268,8 @@
         color: $dark-main--text-color;
         fill: $dark-main--text-color;
         transition: color $animation, fill $animation;
+        display: flex;
+        align-items: center;
     
 
         @include mobile {
@@ -263,6 +285,12 @@
                 color: $main-accent--text-color;
             }
         }
+
+        @include desktop{
+            font-size: 14px;
+            line-height: 16/14;
+            
+        }
     }
 
     &__icon {
@@ -277,6 +305,13 @@
         @include desktop {
             margin-right: 10px;
         } 
+    }
+
+
+    &__item:first-child {
+        @include desktop {
+            margin-right: 30px;
+        }
     }
 } 
 

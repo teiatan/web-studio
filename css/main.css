@@ -110,6 +110,7 @@ img {
   left: 0;
   background-color: #FFFFFF;
   border-bottom: 1px solid #ECECEC;
+  z-index: 2;
 }
 
 .header__fixator.is-open {
@@ -167,7 +168,7 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 2;
+  z-index: 4;
 }
 
 .menu-button:hover {
@@ -221,6 +222,7 @@ img {
   margin: -66px 0 0 0;
   padding-top: 48px;
   overflow: scroll;
+  z-index: 3;
 }
 
 .mobile-container.is-open {

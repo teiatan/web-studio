@@ -15,6 +15,7 @@
         left: 0;
         background-color: $main--background-color;
         @include border-bottom ($header--border-color);
+        z-index: 2;
 
         &.is-open {
             @include border-bottom ($main--background-color);
@@ -58,7 +59,7 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    z-index: 2;
+    z-index: 4;
 
     &:hover {
         fill: $main--hfa-color;
@@ -107,6 +108,7 @@
     margin: -66px 0 0 0;
     padding-top: 48px;
     overflow: scroll;
+    z-index: 3;
     
     &.is-open {
         display: block;

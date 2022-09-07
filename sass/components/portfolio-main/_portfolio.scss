@@ -55,10 +55,20 @@
   .works {
     margin-top: 32px;
     margin-bottom: 60px;
-    
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px -15px 45px -15px;
+    }    
     &__item {
         
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @include tablet {
+            width: calc((100% - 60px) / 2);
+            margin: 15px;
+        }
     
         &:not(:last-child) {
             margin-bottom: 30px;

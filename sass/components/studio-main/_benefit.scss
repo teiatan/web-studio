@@ -74,7 +74,7 @@
     
     &__name {
         font-weight: 700;
-        line-height: (16px/$main--font-size);
+        line-height: calc(16px / $main--font-size);
         text-transform: uppercase;
         text-align: center;
         color: $heading--text-color;
@@ -87,7 +87,7 @@
     }
     
     &__description {
-        line-height: (24px/$main--font-size);
+        line-height: calc(24px / $main--font-size);
     }
 
 }

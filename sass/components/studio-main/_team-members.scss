@@ -59,7 +59,7 @@
     &__name {
         font-weight: 500;
         font-size: $team--font-size;
-        line-height: (19px/$team--font-size);
+        line-height: calc(19px / $team--font-size);
         color: $heading--text-color;
         text-align: center;
         margin-top: 30px;
@@ -67,7 +67,7 @@
 
     &__profession {
         font-size: $team--font-size;
-        line-height: (19px/$team--font-size);
+        line-height: calc(19px / $team--font-size);
         text-align: center;
         margin-top: 10px;
     }

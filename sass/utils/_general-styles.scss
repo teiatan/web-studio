@@ -79,7 +79,7 @@ img {
 
     @include desktop {
         font-size: 36px;
-        line-height: 42/36;
+        line-height: calc(42 / 36);
     }
 }
 

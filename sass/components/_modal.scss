@@ -78,7 +78,7 @@
         text-align: center;
 
         @include desktop {
-            line-height: 23/20;
+            line-height: calc(23 / 20);
         }
       
         &:after {
@@ -104,7 +104,7 @@
         color: #757575;
         font-family: Roboto;
         font-size: 12px;
-        line-height: 14/12;
+        line-height: calc(14 / 12);
 
         &:first-child {
             margin-top: 3px;
@@ -145,14 +145,14 @@
     
         &::placeholder {
             font-size: 14px;
-            line-height: 16/14;
+            line-height: calc(16 / 14);
             font-family: Roboto;
             letter-spacing: 0.01em;
             color: rgba(117, 117, 117, 0.5);
 
             @include desktop {
                 font-size: 12px;
-                line-height: 14/12;
+                line-height: calc(14 / 12);
             }
         }
     
@@ -273,7 +273,7 @@
 
         @include desktop {
             font-size: 14px;
-            line-height: 24/14;
+            line-height: calc(24 / 14);
         }
     }
     
@@ -286,7 +286,7 @@
 
         @include desktop {
             font-size: 14px;
-            line-height: 24/14;
+            line-height: calc(24 / 14);
         }
 
         &--first {

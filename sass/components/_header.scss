@@ -185,14 +185,14 @@
         font-style: normal;
         font-weight: 500;
         font-size: $pages-mm--font-size;
-        line-height: (47px/$pages-mm--font-size);
+        line-height: calc(47px / $pages-mm--font-size);
         color: $heading--text-color;
         transition: color $animation;
         position: relative;
 
         @include tablet {
             font-size: 14px;
-            line-height: 16/14;
+            line-height: calc(16 / 14);
             letter-spacing: 0.02em;
 
             &:hover::after,
@@ -249,13 +249,13 @@
     @include mobile {
         flex-direction: column-reverse;
         justify-content: space-between;
-        min-height: (28px+32px+40px);
+        min-height: calc(28px + 32px + 40px);
     }
 
     @include tablet{
         flex-direction: column;
         justify-content: space-between;
-        min-height: (14px+10px+14px)
+        min-height: calc(14px + 10px + 14px);
     }
 
     @include desktop {
@@ -267,7 +267,7 @@
         font-weight: 500;
         letter-spacing: 0.02em;
         font-size: 12px;
-        line-height: 14/12;
+        line-height: calc(14 / 12);
         color: $dark-main--text-color;
         fill: $dark-main--text-color;
         transition: color $animation, fill $animation;
@@ -279,19 +279,19 @@
    
             &--mail {
                 font-size: $email-mm--font-size;
-                line-height: (28px/$email-mm--font-size);
+                line-height: calc(28px / $email-mm--font-size);
             }
             
             &--tel {
                 font-size: $phone-mm--font-size;
-                line-height: (40px/$phone-mm--font-size);
+                line-height: calc(40px / $phone-mm--font-size);
                 color: $main-accent--text-color;
             }
         }
 
         @include desktop{
             font-size: 14px;
-            line-height: 16/14;
+            line-height: calc( 16 / 14);
             
         }
     }
@@ -334,7 +334,7 @@
     &__link {
         font-weight: 500;
         font-size: $social-networks-mm--font-size;
-        line-height: (22px/$social-networks-mm--font-size);
+        line-height: calc(22px / $social-networks-mm--font-size);
         letter-spacing: 0.02em;
         color: $main-accent--text-color;    
 

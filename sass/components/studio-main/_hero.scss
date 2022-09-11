@@ -58,7 +58,7 @@
         margin-bottom: 30px;
         font-weight: 900;
         font-size: $hero--font-size;
-        line-height: (42px/$hero--font-size);
+        line-height: calc(42px / $hero--font-size);
         letter-spacing: 0.06em;
         text-transform: uppercase;
         text-align: center;
@@ -66,7 +66,7 @@
 
         @include desktop {
             font-size: 44px;
-            line-height: 60/44;
+            line-height: calc(60 / 44);
         }
     }
 

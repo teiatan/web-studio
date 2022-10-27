@@ -49,7 +49,7 @@
         align-items: center;
         padding: 0 22px 0 15px;
 
-        @include mobile {
+        @include upToTablet {
             justify-content: space-between;
         }
 
@@ -69,7 +69,7 @@
 
 
 
-@include mobile {
+@include upToTablet {
     .is-open .logo {
         display: none;
     }
@@ -120,7 +120,7 @@
 
 .mobile-container {
     
-    @include mobile {
+    @include upToTablet {
         display: none;
         box-sizing: border-box;
         padding-left: 40px;
@@ -246,7 +246,7 @@
 .contacts {
     display: flex;
 
-    @include mobile {
+    @include upToTablet {
         flex-direction: column-reverse;
         justify-content: space-between;
         min-height: calc(28px + 32px + 40px);
@@ -275,7 +275,7 @@
         align-items: center;
     
 
-        @include mobile {
+        @include upToTablet {
    
             &--mail {
                 font-size: $email-mm--font-size;

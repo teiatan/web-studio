@@ -9,6 +9,12 @@
       @content;
     }
   }
+
+  @mixin upToTablet () {
+    @media screen and (max-width: $tablet) {
+      @content;
+    }
+  }
   
   @mixin desktop () {
     @media screen and (min-width: $desktop) {

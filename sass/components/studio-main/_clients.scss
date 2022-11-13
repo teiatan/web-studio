@@ -3,14 +3,14 @@
     text-align: center;
 
     &__list {
-        padding-bottom: 60px;
+        //padding-bottom: 60px;
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
 
         @include desktop {
             flex-wrap: nowrap;
-            padding-bottom: 94px;
+            //padding-bottom: 94px;
         }
     }
 

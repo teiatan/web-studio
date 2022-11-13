@@ -32,12 +32,12 @@
     z-index: 5;
 
     @include mobile {
-        width: calc(100vw - 110px);
-        max-height: 529px;
-        overflow: scroll;
+        width: calc(100vw - 15px);
+        //max-height: 529px;
+        //overflow: scroll;
     }
 
-    @include tablet {
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
         box-sizing: border-box;
         width: 450px;
         height: 609px;

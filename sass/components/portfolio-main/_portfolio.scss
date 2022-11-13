@@ -1,8 +1,6 @@
 .portfolio {
 
-    @include tablet {
-        margin-top: 80px;
-    }
+    
     &__title {
         display: none;
     }
@@ -12,14 +10,14 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     align-content: space-between;
-    padding-top: 60px;
+    //padding-top: 60px;
 
     @include tablet {
         justify-content: center;
     }
 
     @include desktop {
-        padding-top: 94px;
+        //padding-top: 94px;
     }
     
     &__item {
@@ -66,7 +64,7 @@
 }
   .works {
     margin-top: 32px;
-    margin-bottom: 60px;
+    //margin-bottom: 60px;
 
     @include tablet {
         display: flex;
@@ -76,7 +74,7 @@
     
     @include desktop {
         justify-content: space-between;
-        margin: 40px 0 64px 0;
+        margin: 40px 0 0 0;
     }
     &__item {
         

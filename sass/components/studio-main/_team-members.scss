@@ -1,8 +1,8 @@
 .team-members {
     background-color: $light-additional--background-color;
-    padding-top: 60px;
+    //padding-top: 60px;
     text-align: center;
-    padding-bottom: 60px;
+    //padding-bottom: 60px;
 
     &__title {
         @include tablet {
@@ -42,7 +42,7 @@
         }
 
 
-        @include mobile {
+        @include upToTablet {
             &:not(:first-child) {
                 margin-top: 30px;
             }

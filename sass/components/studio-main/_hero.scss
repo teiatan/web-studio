@@ -1,7 +1,9 @@
 .hero {
-    margin: 60px auto 0 auto;
-    min-height: 400px;
+    //margin: 60px auto 0 auto;
+    //min-height: 400px;
     width: 100%;
+    //padding: 118px 0;
+    
     background-image: linear-gradient(to right, $hero-image--shadow-color, $hero-image--shadow-color),
         url(../images/hero-mobile-img.jpg);
 
@@ -15,13 +17,15 @@
 
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
   
     display: flex;
     justify-content: center;
     align-items: center;
 
-    @include tablet {
-        margin-top: 80px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        //margin-top: 80px;
+        //padding: 118px 0;
         background-image: linear-gradient(to right, $hero-image--shadow-color, $hero-image--shadow-color),
         url(../images/hero-tablet-img.jpg);
 
@@ -35,7 +39,9 @@
     }
 
     @include desktop {
-        min-height: 600px;
+        //min-height: 600px;
+        //padding: 200px 0;
+        
         background-image: linear-gradient(to right, $hero-image--shadow-color, $hero-image--shadow-color),
         url(../images/hero-img.jpg);
         @media (min-device-pixel-ratio: 2),
@@ -52,6 +58,15 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 118px 0;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            padding: 118px 0;
+        }
+
+        @include desktop {
+            padding: 200px 0;
+        }
     }
 
     &__title {

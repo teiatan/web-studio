@@ -1,10 +1,12 @@
 .header {
-    
-        
+    padding-top: 60px;
+    @media screen and (min-width: 768px) {
+        padding-top: 80px;
+    }
     &__container {
         min-height: 60px;
-        width: 100%;
-        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
 
         @include tablet {
             min-height: 80px;
@@ -47,19 +49,20 @@
         min-height: 60px;
         display: flex;
         align-items: center;
-        padding: 0 22px 0 15px;
+        //padding: 0 22px 0 15px;
 
-        @include upToTablet {
+        @media screen and (max-width: 768px) {
             justify-content: space-between;
         }
 
         @include tablet {
             min-height: 80px;
-            padding: 0 15px 0 15px;
+            //padding: 0 15px 0 15px;
+            justify-content: space-between;
         }
 
         @include desktop {
-            width: 1200px;
+            //width: 1200px;
             padding: 0;
             margin: 0 auto;
         }
@@ -69,7 +72,7 @@
 
 
 
-@include upToTablet {
+@media screen and (max-width: 768px) {
     .is-open .logo {
         display: none;
     }
@@ -120,7 +123,9 @@
 
 .mobile-container {
     
-    @include upToTablet {
+    @media screen and (max-width: 768px) {
+        
+    
         display: none;
         box-sizing: border-box;
         padding-left: 40px;
@@ -140,6 +145,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            
             
         }
 
@@ -246,7 +252,7 @@
 .contacts {
     display: flex;
 
-    @include upToTablet {
+    @media screen and (max-width: 768px) {
         flex-direction: column-reverse;
         justify-content: space-between;
         min-height: calc(28px + 32px + 40px);
@@ -275,7 +281,7 @@
         align-items: center;
     
 
-        @include upToTablet {
+        @media screen and (max-width: 768px) {
    
             &--mail {
                 font-size: $email-mm--font-size;
